@@ -1,16 +1,48 @@
-# days_since
+<div id="top"></div>
 
-A new Flutter project.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Getting Started
+A very simple note taking app with a small twist. I kept finding that I couldn't remember how long ago the last time I had performed certain tasks. For example:
 
-This project is a starting point for a Flutter application.
+* The last time I had changed my razorblade.
+* The last time I had a haircut
+* The last time I cleaned the house
 
-A few resources to get you started if this is your first Flutter project:
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Built With
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is a Flutter app built for Android. Dependencies include
+
+* [sqflite](https://pub.dev/packages/sqflite)
+* [shared_preferences](https://pub.dev/packages/shared_preferences)
+* [uuid ](https://pub.dev/packages/uuid)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [x] Add / delete note activity 
+- [x] Reset note activity when new event occurs
+- [] Update note activity
+- [] UX redesign
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@caynebyron](https://www.instagram.com/caynebyron/) - caynebyron@gmail.com
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/CayneByron/days_since)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
