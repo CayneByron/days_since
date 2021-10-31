@@ -41,7 +41,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@caynebyron](https://www.instagram.com/caynebyron/) - caynebyron@gmail.com
+Cayne Byron Butt - [@caynebyron](https://www.instagram.com/caynebyron/) - caynebyron@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/CayneByron/days_since)
 
