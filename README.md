@@ -43,6 +43,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Cayne Byron Butt - [@caynebyron](https://www.instagram.com/caynebyron/) - caynebyron@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/CayneByron/days_since)
+Project Link: [https://github.com/CayneByron/days_since](https://github.com/CayneByron/days_since)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
