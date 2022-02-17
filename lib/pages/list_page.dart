@@ -113,6 +113,27 @@ class _ListPageState extends State<ListPage> {
     });
   }
 
+  Future<DateTime> selectDate(BuildContext context) async {
+    final DateTime picked = await showDatePicker(
+        context: context,
+        initialDate: new DateTime.now(),
+        firstDate: DateTime(2015, 8),
+        lastDate: DateTime(2101));
+    if (picked != null && picked != new DateTime.now()) {
+      print(picked);
+    }
+    return picked;
+  }
+
+  Future<void> resetActivity(DateTime newDate, int index) async {
+    activities[index].date = newDate;
+    await updateActivity(activities[index]);
+    List<Activity> newActivities = await getActivities();
+    setState(() {
+      activities = newActivities;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -161,12 +182,14 @@ class _ListPageState extends State<ListPage> {
                         ),
                         TextButton(
                           onPressed: () async {
-                            activities[index].date = DateTime.now();
-                            await updateActivity(activities[index]);
-                            List<Activity> newActivities = await getActivities();
-                            setState(() {
-                              activities = newActivities;
-                            });
+                            resetActivity(await selectDate(context), index);
+                            Navigator.pop(context, 'Reset');
+                          },
+                          child: const Text('Select Date'),
+                        ),
+                        TextButton(
+                          onPressed: () async {
+                            resetActivity(DateTime.now(), index);
                             Navigator.pop(context, 'Reset');
                           },
                           child: const Text('OK'),

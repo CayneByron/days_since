@@ -5,6 +5,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:days_since/models/activity.dart';
 import 'package:uuid/uuid.dart';
 import 'package:uuid/uuid_util.dart';
+import 'package:intl/intl.dart';
 
 class AddActivity extends StatefulWidget {
   const AddActivity({Key key}) : super(key: key);
@@ -49,6 +50,8 @@ class _AddActivityState extends State<AddActivity> {
   Widget build(BuildContext context) {
     data = data.isNotEmpty ? data : ModalRoute.of(context).settings.arguments;
     db = data['db'];
+    final DateFormat dateFormatter = DateFormat('yyyy-MM-dd');
+    final String formattedDate = dateFormatter.format(selectedDate);
 
     return Scaffold(
       appBar: AppBar(
@@ -81,6 +84,7 @@ class _AddActivityState extends State<AddActivity> {
               },
             ),
           ),
+          Text("$formattedDate"),
           RaisedButton(
             onPressed: () => _selectDate(context),
             child: Text('Select date'),
